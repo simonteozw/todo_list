@@ -20,5 +20,7 @@ Instructions:
 
 3. Open another Command Line Window
 
+5. cd to this app and then key in `cd client`
+
 4. Key in `yarn start`
 
