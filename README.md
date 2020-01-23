@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Name: Teo Zay We, Simon
 
-Things you may want to cover:
+Matric Number: A0206249E
 
-* Ruby version
+Front End: React
 
-* System dependencies
+Back End: Ruby on Rails
 
-* Configuration
+Database: Postgresql
 
-* Database creation
+Other dependencies: Axios
 
-* Database initialization
+Instructions:
 
-* How to run the test suite
+1. Open your respective Command Line Interface and cd to this app
 
-* Services (job queues, cache servers, search engines, etc.)
+2. Key in `rails s -p 3001`
 
-* Deployment instructions
+3. Open another Command Line Window
 
-* ...
+5. cd to this app and then key in `cd client`
+
+4. Key in `yarn start`
+
