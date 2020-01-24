@@ -10,7 +10,7 @@ Back End: Ruby on Rails
 
 Database: Postgresql
 
-Other dependencies: Axios
+Other dependencies: Axios v 0.19.1
 
 Instructions:
 
