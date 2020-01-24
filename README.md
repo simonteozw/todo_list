@@ -1,5 +1,7 @@
 # README
 
+View live Website @ https://simons-oneandonly-list-app.herokuapp.com/
+
 Name: Teo Zay We, Simon
 
 Matric Number: A0206249E
@@ -20,7 +22,7 @@ Instructions:
 
 3. Open another Command Line Window
 
-5. cd to this app and then key in `cd client`
+4. cd to this app and then key in `cd client`
 
-4. Key in `yarn start`
+5. Key in `yarn start`
 
