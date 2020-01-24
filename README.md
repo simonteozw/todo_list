@@ -1,6 +1,6 @@
 # README
 
-View live Website @ https://simons-oneandonly-list-app.herokuapp.com/
+View live Website: https://simons-oneandonly-list-app.herokuapp.com/
 
 Name: Teo Zay We, Simon
 
