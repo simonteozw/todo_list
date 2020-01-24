@@ -7,6 +7,7 @@
   "author": "simonteozw <simonteozw@gmail.com>",
   "license": "MIT",
   "private": true,
+  "dependencies": "axios",
   "scripts": {
     "build": "cd client && yarn install && yarn build && cd ..",
     "deploy": "cp -a client/build/. public/",
