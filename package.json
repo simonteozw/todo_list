@@ -1,16 +1,15 @@
 {
-  "dependencies": {
-    "axios": "^0.19.1"
-  },
-  "name": "list-of-ingredients",
+  "name": "list-app",
+  "version": "1.0.0",
+  "description": "a simple todo list",
+  "main": "index.js",
+  "repository": "http://github.com/simonteozw/todo_list.git",
+  "author": "simonteozw <simonteozw@gmail.com>",
   "license": "MIT",
-  "engines": {
-    "node": "10.15.3",
-    "yarn": "1.15.2"
-  },
+  "private": true,
   "scripts": {
-    "build": "yarn --cwd client install && yarn --cwd client build",
+    "build": "cd client && yarn install && yarn build && cd ..",
     "deploy": "cp -a client/build/. public/",
-    "heroku-postbuild": "yarn build && yarn deploy"
+    "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
   }
 }

@@ -26,7 +26,7 @@ class List extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:3001/api/v1/items.json')
+        axios.get('/api/v1/items.json')
         .then(response => {
           console.log(response);
           const items = response.data.filter(item => {
@@ -44,7 +44,7 @@ class List extends Component {
 
     addNewItem(name, description) {
         const listref = this.props.list.id;
-        axios.post('http://localhost:3001/api/v1/items', {item: {name, description, listref}})
+        axios.post('/api/v1/items', {item: {name, description, listref}})
         .then(response => {
             console.log(response)
             const items = [ ...this.state.items, response.data ]
@@ -56,7 +56,7 @@ class List extends Component {
     }
 
     removeItem(id) {
-        axios.delete( 'http://localhost:3001/api/v1/items/' + id )
+        axios.delete( '/api/v1/items/' + id )
         .then(response => {
             const items = this.state.items.filter(
                 item => item.id !== id
@@ -67,7 +67,7 @@ class List extends Component {
     }
 
     editItem(id, name, description) {
-        axios.put('http://localhost:3001/api/v1/items/' + id, { 
+        axios.put('/api/v1/items/' + id, { 
             item: {
                 name, 
                 description
