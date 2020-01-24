@@ -28,7 +28,7 @@ class ListContainer extends Component {
     }
 
     componentDidMount() {
-        axios.get('/api/v1/lists.json')
+        axios.get('http://localhost:3001/api/v1/lists.json')
         .then(response => {
           console.log(response)
           this.setState({lists: response.data})
@@ -37,7 +37,7 @@ class ListContainer extends Component {
     }
 
     addNewList(title) {
-        axios.post('/api/v1/lists', { list: {title} })
+        axios.post('http://localhost:3001/api/v1/lists', { list: {title} })
         .then(response => {
             console.log(response)
             const lists = [ ...this.state.lists, response.data ]
@@ -49,7 +49,7 @@ class ListContainer extends Component {
     }
 
     removeList(id) {
-        axios.delete( '/api/v1/lists/' + id )
+        axios.delete( 'http://localhost:3001/api/v1/lists/' + id )
         .then(response => {
             const lists = this.state.lists.filter(
                 list => list.id !== id
@@ -60,7 +60,7 @@ class ListContainer extends Component {
     }
 
     editList(id, title) {
-        axios.put('/api/v1/lists/' + id, { 
+        axios.put('http://localhost:3001/api/v1/lists/' + id, { 
             list: {
                 title
             } 
@@ -111,7 +111,7 @@ class ListContainer extends Component {
     }
 
     handleDrop(listref) {
-        axios.put('/api/v1/items/' + this.state.draggedItem.id, { 
+        axios.put('http://localhost:3001/api/v1/items/' + this.state.draggedItem.id, { 
             item: {
                 name: this.state.draggedItem.name, 
                 description: this.state.draggedItem.description,
